@@ -1,13 +1,31 @@
 :root {
-  --white: #fff;
-  --green: #195936;
-  --semi-black: #052213;
+  --brown: #8a6853;
+  --semi-black: #1d1305;
   --shadow: 0 2px 2px rgb(0, 0, 0/0.5);
+  --text-shadow: 0 0 10px white, 0 0 20px rgb(249, 193, 141), 0 0 30px rgb(196, 139, 17), 0 0 40px rgb(181, 83, 9), 0 0 50px #1d1305, 0 0 60px rgba(255, 187, 0, 0.777), 0 0 70px white;
 }
 
 body {
   font-size: 1.2rem;
   font-family: "Mali", sans-serif;
+}
+
+.arab {
+  font-size: 1.6rem;
+  font-family: "Amiri";
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.arti {
+  font-size: 1rem;
+  font-family: "Mali";
+}
+
+.ref {
+  font-size: 1rem;
+  font-family: "Amiri";
+  font-style: italic;
 }
 
 .hero {
@@ -29,12 +47,12 @@ body {
 }
 
 .hero a {
-  color: var(--green);
+  color: var(--brown);
   background-color: white;
 }
 
 .hero a:hover {
-  background-color: var(--green);
+  background-color: var(--brown);
   color: white;
 }
 
@@ -47,8 +65,15 @@ body {
 
 .dua {
   background-image: none;
-  background-color: lightslategray;
-  color: var(--white);
+  background-color: var(--semi-black);
+  color: wheat;
+}
+
+.dua h1 {
+  font-family: "Sacramento";
+  font-size: 4rem;
+  color: beige;
+  margin: 50px;
 }
 
 .tiga .couple {
@@ -58,36 +83,96 @@ body {
 .tiga h3 {
   font-family: "Sacramento";
   font-size: 2.4rem;
-  color: #052213;
+  color: var(--semi-black);
 }
 
 .tiga .couple img {
-  width: 100%;
+  width: 100px;
+  margin: 30px;
+}
+.tiga .bismillah {
+  font-family: "Amiri";
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0.7;
 }
 
-.tiga .heart {
-  width: 50px;
-  height: 50px;
-  display: flex;
+.tiga p {
+  font-size: 1.2rem;
 }
 
-.tiga .heart i {
-  margin: auto;
+.tiga .parents {
+  font-size: 1rem;
 }
 
 .empat {
-  background-color: #052213;
+  background-color: var(--semi-black);
   color: whitesmoke;
 }
 
-.lima .card {
-  border: 1px solid brown;
+.empat .note {
+  background-color: wheat !important;
+  color: var(--semi-black);
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.empat .card {
+  background-color: bisque;
+  border: 2px solid white;
+}
+
+.empat .tgl {
+  border: 2px solid white !important;
+  color: white;
+  width: 150px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.empat .tgl h1 {
+  margin: 5px;
+}
+
+.empat h1 {
+  font-family: "Sacramento";
+  font-size: 4rem;
+  margin: 50px;
+  color: antiquewhite;
+  /* text-shadow: var(--text-shadow); */
+}
+
+.empat .lokasi h4 {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.empat .lokasi p {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.empat .lokasi .peta {
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.empat .lokasi iframe {
+  border: 4px double white;
+  /* box-shadow: 0 4px 8px 0 rgb(249, 247, 247), 0 6px 20px 0 rgb(246, 244, 244); */
 }
 
 .lima .adab {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.lima h1 {
+  font-family: "Sacramento";
+  font-size: 4rem;
+  margin: 50px;
 }
 .lima img {
   width: 100px;
@@ -96,5 +181,46 @@ body {
 }
 
 .enam .card {
-  border: 1px solid var(--green);
+  border: 1px solid var(--brown);
+}
+
+.end .card {
+  background-color: antiquewhite;
+  border: 2px dotted var(--brown);
+}
+
+.end h1 {
+  font-size: 6rem;
+  color: #8a6853;
+}
+
+.end p {
+  font-size: 1.1rem;
+  color: var(--semi-black);
+}
+
+.footer {
+  background-color: bisque;
+  height: 100px;
+  font-size: 1rem;
+  font-family: "Amiri", sans-serif;
+}
+
+/* Zoom-in Zoom-out*/
+
+/* Extra Large */
+/* @media (max-width: 1200px) {
+  .tiga .and {
+    transform: translateX(-50%) translateY(85px);
+  }
+} */
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
 }

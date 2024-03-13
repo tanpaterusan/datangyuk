@@ -14,3 +14,5 @@ const param = urlParams.get('to');
 const upTo = param[0].toUpperCase() + param.substring(1);;
 // const upTo = param.capitalizeFirstLetter();
 document.getElementById('to').innerHTML = upTo + '  <i class="fa-solid fa-heart"></i>';
+
+
