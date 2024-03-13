@@ -1,0 +1,100 @@
+:root {
+  --white: #fff;
+  --green: #195936;
+  --semi-black: #052213;
+  --shadow: 0 2px 2px rgb(0, 0, 0/0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Mali", sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  background-color: var(--semi-black);
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--green);
+  background-color: white;
+}
+
+.hero a:hover {
+  background-color: var(--green);
+  color: white;
+}
+
+/* section */
+
+.satu {
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+.dua {
+  background-image: none;
+  background-color: lightslategray;
+  color: var(--white);
+}
+
+.tiga .couple {
+  margin-top: 100px;
+}
+
+.tiga h3 {
+  font-family: "Sacramento";
+  font-size: 2.4rem;
+  color: #052213;
+}
+
+.tiga .couple img {
+  width: 100%;
+}
+
+.tiga .heart {
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.tiga .heart i {
+  margin: auto;
+}
+
+.empat {
+  background-color: #052213;
+  color: whitesmoke;
+}
+
+.lima .card {
+  border: 1px solid brown;
+}
+
+.lima .adab {
+  font-size: 1.2rem;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.lima img {
+  width: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.enam .card {
+  border: 1px solid var(--green);
+}

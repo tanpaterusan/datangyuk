@@ -10,6 +10,9 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"></link>
+    <script src="countdown/simplyCountdown.min.js"></script>
   </head>
   <body>
     <!-- Header - set the background image for the header in the line below-->
@@ -19,56 +22,35 @@
           <p class="text-black-50 mb-5" style="font-family: 'Luminari', fantasy;">Walimatul 'Urs OF</p>
           <img class="img-fluid rounded-circle mb-5" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg" alt="..." />
           <h1 class="text-black fs-3 fw-bolder mb-3" style="font-family: cursive;">Rima & Andi</h1>
-          <div class="span text-dark mb-3" style="font-family: 'Gill Sans', sans-serif; font-size: 7;">Kepada Yth. Bapak/Ibu/Saudara/Saudari :</div>
-          <h5 id="to" class="text-black mt-3" style="font-family: 'Gill Sans', sans-serif;"></h5>
-          <a href="detail.html" class="btn btn-outline-dark mt-3">Buka Undangan</a>
+          <div class="simply-countdown"></div>
         </div>
       </div>
     </header>
     <!-- Content section-->
     <section class="py-5">
       <div class="container my-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="color: black;">
           <div class="col-lg-6">
-            <h2>Full Width Backgrounds</h2>
-            <p class="lead">A single, lightweight helper class allows you to add engaging, full width background images to sections of your page.</p>
-            <p class="mb-0">The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably egocentric of us to suggest that we're alone in the universe.</p>
+            <p class="lead">
+              وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ ۝٢١
+            </p>
+            <p class="mb-0">
+              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh,
+              pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+              <br />
+              <i>( Q.S. Ar-Ruum ayat 21)</i>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-097bf32 elementor-section-full_width elementor-section-height-default elementor-section-height-default wdp-sticky-section-no" data-id="097bf32" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fbe3263 wdp-sticky-section-no elementor-invisible" data-id="fbe3263" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;zoomIn&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-c530e26 elementor-view-default wdp-sticky-section-no elementor-widget elementor-widget-icon" data-id="c530e26" data-element_type="widget" data-widget_type="icon.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-icon-wrapper">
-			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-quote-right"></i>			</div>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-8a64776 wdp-sticky-section-no elementor-widget elementor-widget-heading" data-id="8a64776" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"> Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
-
-</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-962fbdb wdp-sticky-section-no elementor-widget elementor-widget-heading" data-id="962fbdb" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">QS. Ar-Rum Ayat 21</h2>		</div>
-				</div>
-					</div>
-		</div>
-					</div>
     <!-- Image element - set the background image for the header in the line below-->
-    <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800');">
+    <div class="py-5 bg-image-full" style="background-image: url('assets/wedpic.png');">
       <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-      <div style="height: 20rem;"></div>
+      <div style="height: 20rem;">
+      
+      </div>
     </div>
     <!-- Content section-->
     <section class="py-5">
@@ -86,10 +68,28 @@
     <footer class="py-5 bg-dark">
       <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
     </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/7863acc66a.js" crossorigin="anonymous"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 4, // required
+        day: 13, // required
+        hours: 8, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: " hari", plural: "hari" },
+          hours: { singular: " jam", plural: "jam" },
+          minutes: { singular: " menit", plural: "menit" },
+          seconds: { singular: " detik", plural: "detik" },
+        },
+      });
+    </script>
   </body>
 </html>
