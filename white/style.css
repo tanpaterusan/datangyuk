@@ -164,7 +164,7 @@ body {
 }
 
 .lima .adab {
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -177,7 +177,7 @@ body {
 .lima img {
   width: 100px;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .enam .card {
