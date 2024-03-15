@@ -35,25 +35,29 @@ body {
 
 .hero h4 {
   font-size: 1.6rem;
+  font-family: "UnifrakturMaguntia", cursive;
+  color: goldenrod;
 }
 
 .hero h1 {
   font-family: "Sacramento", cursive;
   font-size: 6rem;
+  text-shadow: var(--text-shadow);
 }
 
 .hero p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .hero a {
-  color: var(--brown);
-  background-color: white;
+  color: var(--semi-black);
+  background-color: goldenrod;
+  font-size: 1.2rem;
 }
 
 .hero a:hover {
-  background-color: var(--brown);
-  color: white;
+  background-color: var(--semi-black);
+  color: goldenrod;
 }
 
 /* section */
@@ -61,6 +65,21 @@ body {
 .satu {
   min-height: 100vh;
   background-color: whitesmoke;
+}
+
+.satu h4 {
+  font-family: "Sacramento";
+  font-size: 2rem;
+}
+
+.satu h1 {
+  font-size: 3rem;
+  color: var(--brown);
+  text-shadow: var(--text-shadow);
+}
+
+.satu img {
+  border: 4px double beige !important;
 }
 
 .dua {
@@ -80,16 +99,30 @@ body {
   margin-top: 100px;
 }
 
+.tiga .and {
+  padding-top: 70px;
+}
+
 .tiga h3 {
   font-family: "Sacramento";
   font-size: 2.4rem;
   color: var(--semi-black);
 }
 
-.tiga .couple img {
+.tiga .and img {
   width: 100px;
   margin: 30px;
 }
+
+.tiga .mempelai img {
+  width: 150px;
+  margin-bottom: 30px;
+  /* border: 2px solid goldenrod; */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  box-shadow: 5px 5px 10px 10px beige;
+}
+
 .tiga .bismillah {
   font-family: "Amiri";
   font-size: 2rem;
@@ -163,6 +196,28 @@ body {
   /* box-shadow: 0 4px 8px 0 rgb(249, 247, 247), 0 6px 20px 0 rgb(246, 244, 244); */
 }
 
+.syiar h1 {
+  font-family: "Sacramento";
+  font-size: 4rem;
+  color: var(--brown);
+  margin: 50px;
+}
+
+.syiar .kegiatan {
+  text-align: justify;
+}
+
+.syiar a {
+  background-color: var(--brown);
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.lima {
+  background-color: var(--semi-black);
+}
+
 .lima .adab {
   font-size: 0.7rem;
   margin-top: 50px;
@@ -178,10 +233,13 @@ body {
   width: 100px;
   margin-top: 50px;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .enam .card {
   border: 1px solid var(--brown);
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 .end .card {
@@ -205,6 +263,34 @@ body {
   font-size: 1rem;
   font-family: "Amiri", sans-serif;
 }
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  cursor: pointer;
+  color: bisque;
+  mix-blend-mode: difference;
+  opacity: 0.6;
+}
+
+/* .hero { */
+/* overflow: hidden; */
+/* color: #000;   
+  line-height: 50px; */
+
+/* transition: all 0.5s ease-out; */
+/* height: auto; */
+/* } */
+
+/* .hero:target { */
+/* height: 0;
+  overflow: hidden; */
+/* display: hidden; */
+/* } */
 
 /* Zoom-in Zoom-out*/
 
