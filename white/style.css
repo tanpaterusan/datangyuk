@@ -5,6 +5,10 @@
   --text-shadow: 0 0 10px white, 0 0 20px rgb(249, 193, 141), 0 0 30px rgb(196, 139, 17), 0 0 40px rgb(181, 83, 9), 0 0 50px #1d1305, 0 0 60px rgba(255, 187, 0, 0.777), 0 0 70px white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.2rem;
   font-family: "Mali", sans-serif;
@@ -56,7 +60,7 @@ body {
 }
 
 .hero a:hover {
-  background-color: var(--semi-black);
+  background-color: white;
   color: goldenrod;
 }
 
@@ -65,6 +69,8 @@ body {
 .satu {
   min-height: 100vh;
   background-color: whitesmoke;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
 }
 
 .satu h4 {
@@ -148,7 +154,7 @@ body {
   background-color: wheat !important;
   color: var(--semi-black);
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 
 .empat .card {
@@ -161,11 +167,17 @@ body {
   color: white;
   width: 150px;
   padding: 20px;
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.divider {
+  border: 1px dashed white;
 }
 
 .empat .tgl h1 {
   margin: 5px;
+  text-shadow: var(--text-shadow);
 }
 
 .empat h1 {
@@ -173,7 +185,6 @@ body {
   font-size: 4rem;
   margin: 50px;
   color: antiquewhite;
-  /* text-shadow: var(--text-shadow); */
 }
 
 .empat .lokasi h4 {
@@ -237,19 +248,55 @@ body {
 }
 
 .enam .card {
-  border: 1px solid var(--brown);
+  border: 2px double var(--brown);
   border-top-left-radius: 30%;
   border-bottom-right-radius: 30%;
+  padding: 20px;
+}
+
+.enam h1 {
+  font-size: 4rem;
+  font-family: "Sacramento";
+  margin-top: 20px;
+}
+
+.rsvp {
+  background-color: var(--semi-black);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.rsvp h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  color: bisque;
+  opacity: 0.7htm;
+}
+
+.rsvp label {
+  color: white;
+  font-size: 1rem;
+}
+
+.rsvp button {
+  background-color: antiquewhite;
+}
+
+.rsvp button:hover {
+  background-color: var(--brown);
+  color: antiquewhite;
 }
 
 .end .card {
   background-color: antiquewhite;
   border: 2px dotted var(--brown);
+  padding: 50px;
 }
 
 .end h1 {
   font-size: 6rem;
   color: #8a6853;
+  margin: 10px;
 }
 
 .end p {
@@ -257,11 +304,11 @@ body {
   color: var(--semi-black);
 }
 
-.footer {
-  background-color: bisque;
-  height: 100px;
-  font-size: 1rem;
-  font-family: "Amiri", sans-serif;
+.end img {
+  width: 150px;
+  margin-bottom: 30px;
+  /* border: 2px solid goldenrod; */
+  /* box-shadow: 5px 5px 10px 10px beige; */
 }
 
 .audio-icon-wrapper {
@@ -275,6 +322,13 @@ body {
   color: bisque;
   mix-blend-mode: difference;
   opacity: 0.6;
+}
+
+.footer {
+  background-color: bisque;
+  height: 150px;
+  font-size: 1rem;
+  font-family: "Amiri", sans-serif;
 }
 
 /* .hero { */

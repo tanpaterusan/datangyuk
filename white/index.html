@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Akad Rima & Andi</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -119,7 +122,7 @@
             <div class="col-md-12 col-12">
               <iframe class="maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3943598005585!2d104.7576280749705!3d-2.98791709698815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b763fffffffff%3A0x8a4c35280f8447f5!2sMasjid%20Agung%20Sultan%20Mahmud%20Badaruddin%20Jayo%20Wikramo!5e0!3m2!1sid!2sid!4v1710315308912!5m2!1sid!2sid"
-                width="500" height="200" allowfullscreen="" loading="lazy"
+                width="100%" height="250px" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
@@ -129,7 +132,7 @@
 
           <p style="opacity: 0.8;">pada hari/tanggal : </p>
           <div class="tgl mx-auto align-items-center">
-            <p>Ahad</p>
+            <p style="margin-top: 25px;">Ahad</p>
             <h1>13</h1>
             <p>April 2024</p>
           </div>
@@ -192,25 +195,29 @@
           <div class="card-body">
             <h1 class="card-title">Adab Menghadiri Walimah</h1>
             <div id="adab" class="adab row justify-content-center">
-              <div class="busana col-lg-4">
+              <div class="busana col-md-4 col-6">
                 <img src="https://diinvait.com/wp-content/uploads/2022/01/icon-busana1.png" alt="busana" />
                 <p>Berpakaian yang menutup aurat</p>
               </div>
-              <div class="makan col-lg-4">
+              <div class="makan col-md-4 col-6">
                 <img src="https://diinvait.com/wp-content/uploads/2022/01/icon-makan1.png" alt="makan" />
                 <p>Perhatikan adab makan dan minum</p>
               </div>
-              <div class="kamera col-lg-4">
+              <div class="kamera col-md-4 col-6">
                 <img src="https://diinvait.com/wp-content/uploads/2022/01/icon-kamera1.png" alt="kamera" />
-                <p>Berpakaian yang menutup aurat</p>
+                <p>Jangan mengambil gambar tanpa izin</p>
               </div>
-              <div class="masjid col-lg-4">
+              <div class="masjid col-md-4 col-6">
                 <img src="https://diinvait.com/wp-content/uploads/2022/01/icon-masjid1.png" alt="masjid" />
-                <p>Berpakaian yang menutup aurat</p>
+                <p>Mendahulukan pelaksanaan shalat wajib</p>
               </div>
-              <div class="doa col-lg-4">
+              <div class="khalwat col-md-4 col-6">
+                <img src="https://diinvait.com/wp-content/uploads/2022/01/icon-pria-wanita1.png" alt="khalwat">
+                <p>Tidak berkhalwat/berdua-duaan dengan lawan jenis yang bukan mahram </p>
+              </div>
+              <div class="doa col-md-4 col-6">
                 <img src="https://diinvait.com/wp-content/uploads/2022/01/icon-doa1.png" alt="doa" />
-                <p>Berpakaian yang menutup aurat</p>
+                <p>Mendoakan pengantin</p>
               </div>
             </div>
           </div>
@@ -236,130 +243,123 @@
     </div>
   </section>
 
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center mt-5 mb-5">
+          <h1>Konfirmasi Kehadiran</h1>
+        </div>
+
+        <div class="col-6">
+          <form id="my-form" class="row g-3 align-items-center justify-content-center mb-5" method="POST"
+            action="https://script.google.com/macros/s/AKfycbyo4wsJC6ROdABofnMu85XaHf70hmJGA4KaHZ1kDg6F3rcj_ZL5LkHFiKjw5uMFErLC/exec">
+            <div class="col-md-4">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+            <div class="col-md-2">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            </div>
+            <div class="col-md-6">
+              <label for="hadir" class="form-label">Hadir/Tidak</label>
+              <select id="hadir" class="form-select" name="hadir">
+                <option selected>Pilih salah satu</option>
+                <option value="1">Insyaallah, saya akan hadir</option>
+                <option value="2">Mohon maaf, belum bisa hadir</option>
+                <option value="3">Ragu-ragu</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="ucapan" class="form-label">Beri Ucapan</label>
+              <textarea type="text" class="form-control" id="ucapan" name="ucapan"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-lg">Kirim</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="end" class="end">
     <div class="container">
       <div class="card mt-5 mb-5">
         <div class="card-body">
           <h1 class="card-title text-center"><i class="bi bi-envelope-heart"></i></h1>
-          <p class="text-end">"Beribadah di atas ketaatan membutuhkan perjuangan keistiqamahan yang panjang dan dengan
-            menikah saya berharap dapat memiliki partner hidup yang dapat membersamai dan mendukung proses tersebut."
-            <br> ~<i>Andi</i>
-          </p>
-          <p>"Menikah itu tentang melanjutkan hari. Bagaimana seorang hamba menjalankan peran barunya, tentu dengan
-            kebaikan yang bertambah. Menikah itu ibarat berkendara. Bagaimana sang pengemudi mampu mengarahkan
-            penumpangnya pada satu tujuan saja, surga-Nya." <br> ~<i>Rima</i></p>
+          <div class="col-10 align-items-center justify-content-center">
+            <div class="row ">
+              <div class="col-md-6">
+                <p class="text-end">"Beribadah di atas ketaatan membutuhkan perjuangan keistiqamahan yang panjang dan
+                  dengan
+                  menikah saya berharap dapat memiliki partner hidup yang dapat membersamai dan mendukung proses
+                  tersebut."
+                  <br> ~<i>Andi</i>
+              </div>
+              <div class="col-md-4">
+                <img src="assets/andi-crop.png" alt="andi" class="img-responsive rounded-circle">
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-4">
+                <img src="assets/rim-crop.png" alt="rima" class="img-responsive rounded-circle">
+              </div>
+              <div class="col-md-6">
+                <p>"Menikah itu tentang melanjutkan hari. Bagaimana seorang hamba menjalankan peran barunya, tentu
+                  dengan
+                  kebaikan yang bertambah. Menikah itu ibarat berkendara. Bagaimana sang pengemudi mampu mengarahkan
+                  penumpangnya pada satu tujuan saja, surga-Nya." <br> ~<i>Rima</i></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="card mt-5 mb-5">
-        <div class="card-body">
-          <form method="POST" action="YOUR_WEBAPP_URL">
-            <input name="Email" type="email" placeholder="Email" required>
-            <input name="Name" type="text" placeholder="Name" required>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <div id="audio-container" class="audio-box">
+</body>
+
+<footer>
+  <div id="audio-container">
     <audio id="song" autoplay loop>
-      <source src="https://diinvait.com/wp-content/uploads/2022/10/muad-perfect-vocals-only.mp3" type="audio/mp3">
+      <source src="assets/pesan-perubahan_badr-al-hamoudi.mp4" type="audio/mp4">
     </audio>
 
-    <div class="audio-icon-wrapper" id="unmute-sound" style="display: none;">
+    <div class="audio-icon-wrapper" style="display: none;">
       <div class="audio-icon">
         <i class="bi bi-play-circle"></i>
       </div>
     </div>
 
-    <div class="audio-icon-wrapper" id="mute-sound" style="display: none;">
+    <div class="audio-icon-wrapper" style="display: none;">
       <div class="audio-icon">
         <i aria-hidden="true" class="bi bi-pause-circle"></i>
       </div>
     </div>
   </div>
 
-</body>
-<footer>
+
   <div id="footer" class="footer">
     <div class="p-5 mx-auto text-center d-flex justify-content-center align-items-center">
-      This web-invitation is supported by : Kawan-kawan di PERSIMPANGAN DOA
+      <span>&copy 2024 Rima-Andi Wedding. All Rights Reserved. <br>
+        This web-invitation is supported by : Kawan-kawan PERSIMPANGAN DOA.</span>
     </div>
   </div>
 
-  <script src="scripts.js"></script>
-  <script>
-    simplyCountdown(".simply-countdown", {
-      year: 2024, // required
-      month: 4, // required
-      day: 13, // required
-      hours: 8, // Default is 0 [0-23] integer
-      minutes: 0, // Default is 0 [0-59] integer
-      seconds: 0, // Default is 0 [0-59] integer
-      words: {
-        //words displayed into the countdown
-        days: { singular: " hari", plural: "hari" },
-        hours: { singular: " jam", plural: "jam" },
-        minutes: { singular: " menit", plural: "menit" },
-        seconds: { singular: " detik", plural: "detik" },
-      },
-    });
-  </script>
 
-  <script>
-    const rootElement = document.querySelector(":root");
-    const hero = document.getElementById('hero');
-    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
-    const song = document.querySelector('#song');
-
-    function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-      window.onscroll = function () {
-        window.scrollTo(scrollTop, scrollLeft);
-      }
-
-      rootElement.style.scrollBehavior = 'auto';
-    }
-
-    function enableScroll() {
-      window.onscroll = function () { }
-      rootElement.style.scrollBehavior = 'smooth';
-      playAudio();
-    }
-
-    function playAudio() {
-      song.volume = 0.5;
-      audioIconWrapper.style.display = 'flex';
-      song.play();
-
-      isPlaying = 'true';
-    }
-
-    audioIconWrapper.onclick = function () {
-      if (isPlaying) {
-        song.pause();
-      } else {
-        song.play();
-      }
-
-      isPlaying = !isPlaying;
-    }
-
-
-
-    disableScroll();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+
 </footer>
 
 </html>
