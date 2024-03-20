@@ -11,7 +11,8 @@ html {
 
 body {
   font-size: 1.2rem;
-  font-family: "Mali", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
+  /* background-image: url(assets/bg_bunga2.jpeg); */
 }
 
 .arab {
@@ -23,7 +24,7 @@ body {
 
 .arti {
   font-size: 1rem;
-  font-family: "Mali";
+  font-family: "Amiri";
 }
 
 .ref {
@@ -35,18 +36,27 @@ body {
 .hero {
   min-height: 100vh;
   background-color: var(--semi-black);
+  background-image: url(assets/bg_bunga2.jpeg);
+  width: 100%;
+  /* opacity: 0.5; */
+}
+
+.hero .card {
+  background-color: var(--semi-black);
+  opacity: 0.5;
 }
 
 .hero h4 {
   font-size: 1.6rem;
-  font-family: "UnifrakturMaguntia", cursive;
   color: goldenrod;
+  font-family: "Cookie", cursive;
+  /* opacity: 1 !important; */
 }
 
 .hero h1 {
-  font-family: "Sacramento", cursive;
   font-size: 6rem;
   text-shadow: var(--text-shadow);
+  font-family: "Alex Brush";
 }
 
 .hero p {
@@ -69,16 +79,19 @@ body {
 .satu {
   min-height: 100vh;
   background-color: whitesmoke;
+  /* background-image: url(assets/bg_bunga2.jpeg); */
+  /* opacity: 0.5; */
   /* padding-top: 40px;
   padding-bottom: 40px; */
 }
 
 .satu h4 {
-  font-family: "Sacramento";
   font-size: 2rem;
+  font-family: "Cookie", cursive;
 }
 
 .satu h1 {
+  font-family: "Alex Brush";
   font-size: 3rem;
   color: var(--brown);
   text-shadow: var(--text-shadow);
@@ -95,24 +108,33 @@ body {
 }
 
 .dua h1 {
-  font-family: "Sacramento";
   font-size: 4rem;
+  font-family: "Cookie", cursive;
   color: beige;
   margin: 50px;
 }
+
+/* .tiga {
+  background-image: url(assets/bg_bunga2.jpeg);
+  width: 100%;
+} */
 
 .tiga .couple {
   margin-top: 100px;
 }
 
-.tiga .and {
+/* .tiga .and {
   padding-top: 70px;
-}
+} */
 
-.tiga h3 {
-  font-family: "Sacramento";
+.tiga h2 {
+  font-family: "Cookie", cursive;
   font-size: 2.4rem;
   color: var(--semi-black);
+}
+
+.tiga h1 {
+  font-family: "Alex Brush";
 }
 
 .tiga .and img {
@@ -122,10 +144,14 @@ body {
 
 .tiga .mempelai img {
   width: 150px;
+  /* height: 200px; */
   margin-bottom: 30px;
+  border-radius: 60px;
   /* border: 2px solid goldenrod; */
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  /* border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px; */
   box-shadow: 5px 5px 10px 10px beige;
 }
 
@@ -143,6 +169,7 @@ body {
 
 .tiga .parents {
   font-size: 1rem;
+  font-family: "Cormorant Garamond", sans-serif;
 }
 
 .empat {
@@ -163,9 +190,9 @@ body {
 }
 
 .empat .tgl {
-  border: 2px solid white !important;
+  border: 2px double wheat !important;
   color: white;
-  width: 150px;
+  width: 450px;
   padding: 20px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -175,13 +202,17 @@ body {
   border: 1px dashed white;
 }
 
-.empat .tgl h1 {
-  margin: 5px;
+.empat .tgl p {
+  font-family: "Gaegu", cursive;
+  font-size: 2rem;
+  /* margin: 5px; */
   text-shadow: var(--text-shadow);
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 .empat h1 {
-  font-family: "Sacramento";
+  font-family: "Cookie", cursive;
   font-size: 4rem;
   margin: 50px;
   color: antiquewhite;
@@ -207,8 +238,12 @@ body {
   /* box-shadow: 0 4px 8px 0 rgb(249, 247, 247), 0 6px 20px 0 rgb(246, 244, 244); */
 }
 
+.syiar {
+  background-color: antiquewhite;
+}
+
 .syiar h1 {
-  font-family: "Sacramento";
+  font-family: "Cookie", cursive;
   font-size: 4rem;
   color: var(--brown);
   margin: 50px;
@@ -223,10 +258,12 @@ body {
   color: white;
   border-radius: 15px;
   padding: 15px;
+  margin: 10px;
 }
 
 .lima {
   background-color: var(--semi-black);
+  /* background-image: url(assets/bg_bunga2.jpeg); */
 }
 
 .lima .adab {
@@ -236,7 +273,7 @@ body {
 }
 
 .lima h1 {
-  font-family: "Sacramento";
+  font-family: "Cookie", cursive;
   font-size: 4rem;
   margin: 50px;
 }
@@ -247,45 +284,26 @@ body {
   padding: 0;
 }
 
+/* .enam {
+  background-image: url(assets/bg_bunga2.jpeg);
+} */
+
 .enam .card {
-  border: 2px double var(--brown);
-  border-top-left-radius: 30%;
-  border-bottom-right-radius: 30%;
+  border: 2px solid var(--semi-black);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
   padding: 20px;
 }
 
 .enam h1 {
+  font-family: "Cookie", cursive;
   font-size: 4rem;
-  font-family: "Sacramento";
   margin-top: 20px;
 }
 
-.rsvp {
-  background-color: var(--semi-black);
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.rsvp h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 4rem;
-  color: bisque;
-  opacity: 0.7htm;
-}
-
-.rsvp label {
-  color: white;
-  font-size: 1rem;
-}
-
-.rsvp button {
-  background-color: antiquewhite;
-}
-
-.rsvp button:hover {
-  background-color: var(--brown);
-  color: antiquewhite;
-}
+/* .end {
+  background-image: url(assets/bg_bunga2.jpeg);
+} */
 
 .end .card {
   background-color: antiquewhite;
@@ -306,9 +324,14 @@ body {
 .end img {
   width: 150px;
   margin-bottom: 30px;
+  margin-top: 30px;
   /* border: 2px solid goldenrod; */
   /* box-shadow: 5px 5px 10px 10px beige; */
 }
+
+/* .end .rima {
+  margin-top: 4rem;
+} */
 
 .audio-icon-wrapper {
   width: 4rem;
