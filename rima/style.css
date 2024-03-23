@@ -12,7 +12,7 @@ html {
 body {
   font-size: 1.2rem;
   font-family: "Cormorant Garamond", sans-serif;
-  background-image: url(assets/bg_bunga3.jpeg);
+  /* background-image: url(assets/bg_bunga3.jpeg); */
 }
 
 .arab {
@@ -20,11 +20,15 @@ body {
   font-family: "Amiri";
   margin-top: 50px;
   margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .arti {
   font-size: 1rem;
   font-family: "Amiri";
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .ref {
@@ -214,7 +218,6 @@ body {
 }
 
 .empat .tgl p {
-  font-family: "Gaegu", cursive;
   font-style: oblique 1;
   font-size: 2.5rem;
   /* margin: 5px; */
@@ -266,6 +269,8 @@ body {
 
 .syiar .kegiatan {
   text-align: justify;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .syiar a {
@@ -286,7 +291,7 @@ body {
 }
 
 .lima .adab {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -325,7 +330,7 @@ body {
 
 .enam .end .card {
   background-color: rgba(241, 227, 197, 0.3);
-  border: 2px solid var(--brown);
+  border: 2px solid burlywood;
   padding: 50px;
 }
 
