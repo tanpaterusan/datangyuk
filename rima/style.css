@@ -12,7 +12,7 @@ html {
 body {
   font-size: 1.2rem;
   font-family: "Cormorant Garamond", sans-serif;
-  /* background-image: url(assets/bg_bunga2.jpeg); */
+  background-image: url(assets/bg_bunga3.jpeg);
 }
 
 .arab {
@@ -36,9 +36,8 @@ body {
 .hero {
   min-height: 100vh;
   background-color: var(--semi-black);
-  background-image: url(assets/bg_bunga2.jpeg);
-  width: 100%;
-  /* opacity: 0.5; */
+  background-image: url(assets/bg_bunga3.PNG);
+  background-size: 100%;
 }
 
 .hero .card {
@@ -48,7 +47,7 @@ body {
 
 .hero h4 {
   font-size: 1.6rem;
-  color: goldenrod;
+  color: var(--brown);
   font-family: "Cookie", cursive;
   /* opacity: 1 !important; */
 }
@@ -74,12 +73,22 @@ body {
   color: goldenrod;
 }
 
+/* @keyframes heroIlang {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+} */
+
 /* section */
 
 .satu {
   min-height: 100vh;
-  background-color: whitesmoke;
-  /* background-image: url(assets/bg_bunga2.jpeg); */
+  /* background-color: whitesmoke; */
+  background-image: url(assets/bg_bunga3.PNG);
+  background-size: 100%;
   /* opacity: 0.5; */
   /* padding-top: 40px;
   padding-bottom: 40px; */
@@ -88,17 +97,19 @@ body {
 .satu h4 {
   font-size: 2rem;
   font-family: "Cookie", cursive;
+  color: var(--brown);
 }
 
 .satu h1 {
   font-family: "Alex Brush";
   font-size: 3rem;
-  color: var(--brown);
+  color: var(--semi-black);
   text-shadow: var(--text-shadow);
 }
 
 .satu img {
-  border: 4px double beige !important;
+  /* border: 4px double wheat !important; */
+  box-shadow: 5px 5px 10px 10px var(--brown);
 }
 
 .dua {
@@ -110,14 +121,14 @@ body {
 .dua h1 {
   font-size: 4rem;
   font-family: "Cookie", cursive;
-  color: beige;
+  color: linen;
   margin: 50px;
 }
 
-/* .tiga {
-  background-image: url(assets/bg_bunga2.jpeg);
-  width: 100%;
-} */
+.tiga {
+  background-image: url(assets/bg_bunga3.PNG);
+  background-size: 100%;
+}
 
 .tiga .couple {
   margin-top: 100px;
@@ -152,7 +163,7 @@ body {
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px; */
-  box-shadow: 5px 5px 10px 10px beige;
+  box-shadow: 5px 5px 10px 10px var(--brown);
 }
 
 .tiga .bismillah {
@@ -185,8 +196,8 @@ body {
 }
 
 .empat .card {
-  background-color: bisque;
-  border: 2px solid white;
+  background-color: linen;
+  border: 4px solid wheat;
 }
 
 .empat .tgl {
@@ -204,7 +215,8 @@ body {
 
 .empat .tgl p {
   font-family: "Gaegu", cursive;
-  font-size: 2rem;
+  font-style: oblique 1;
+  font-size: 2.5rem;
   /* margin: 5px; */
   text-shadow: var(--text-shadow);
   margin-top: 50px;
@@ -239,7 +251,10 @@ body {
 }
 
 .syiar {
-  background-color: antiquewhite;
+  /* background-color: linen; */
+  background-image: url(assets/bg_bunga3.PNG);
+  background-size: 100%;
+  border: 4px solid wheat;
 }
 
 .syiar h1 {
@@ -263,7 +278,11 @@ body {
 
 .lima {
   background-color: var(--semi-black);
-  /* background-image: url(assets/bg_bunga2.jpeg); */
+  /* background-image: url(assets/bg_bunga3.PNG); */
+}
+
+.lima .card {
+  background-color: linen;
 }
 
 .lima .adab {
@@ -284,39 +303,38 @@ body {
   padding: 0;
 }
 
-/* .enam {
-  background-image: url(assets/bg_bunga2.jpeg);
-} */
+.enam {
+  background-image: url(assets/bg_bunga3.PNG);
+  background-size: 100%;
+}
 
-.enam .card {
-  border: 2px solid var(--semi-black);
+.enam .doa .card {
+  border: 2px solid lightsalmon;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   padding: 20px;
+  background-color: rgb(247, 242, 241, 0.3);
 }
 
-.enam h1 {
+.enam .doa h1 {
+  color: salmon;
   font-family: "Cookie", cursive;
   font-size: 4rem;
   margin-top: 20px;
 }
 
-/* .end {
-  background-image: url(assets/bg_bunga2.jpeg);
-} */
-
-.end .card {
-  background-color: antiquewhite;
-  border: 2px dotted var(--brown);
+.enam .end .card {
+  background-color: rgba(241, 227, 197, 0.3);
+  border: 2px solid var(--brown);
   padding: 50px;
 }
 
-.end h1 {
+.enam .end h1 {
   font-size: 6rem;
   color: #8a6853;
 }
 
-.end p {
+.enam .end p {
   font-size: 1.1rem;
   color: var(--semi-black);
 }
@@ -329,9 +347,11 @@ body {
   /* box-shadow: 5px 5px 10px 10px beige; */
 }
 
-/* .end .rima {
-  margin-top: 4rem;
-} */
+.enam .salam {
+  font-family: "Cookie", cursive;
+  padding: 50px;
+  /* margin-bottom: 50px; */
+}
 
 .audio-icon-wrapper {
   width: 4rem;

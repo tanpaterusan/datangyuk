@@ -24,7 +24,7 @@
 
 <body>
   <section id="hero"
-    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black">
     <main>
       <h4>Undangan Pernikahan</h4>
       <h1>Andi & Rima</h1>
@@ -93,7 +93,7 @@
             </p>
           </div>
           <div class="and col-md-2 col-12 justify-content-center">
-            <img src="assets/and2.png" alt="">
+            <img src="assets/and.png" alt="">
           </div>
           <div class="mempelai col-md-5 col-12">
             <!-- ukuran foto 400x400px -->
@@ -226,50 +226,50 @@
   </section>
 
   <section id="enam" class="enam">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="card text-center mt-5 mb-5">
-          <div class="card-body">
-            <h1 class="card-title">Doa untuk Pengantin</h1>
-            <p class="arab">بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِى خَيْرٍ
-            </p>
-            <p class="arti">"Semoga Allah memberkahimu ketika bahagia dan ketika susah dan mengumpulkan kalian berdua
-              dalam kebaikan.”</p>
-            <p class="ref">(HR. Abu Daud, no. 2130)</p>
+    <div id="doa" class="doa">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card text-center mt-5 mb-5">
+            <div class="card-body">
+              <h1 class="card-title">Doa untuk Pengantin</h1>
+              <p class="arab">بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِى خَيْرٍ
+              </p>
+              <p class="arti">"Semoga Allah memberkahimu ketika bahagia dan ketika susah dan mengumpulkan kalian berdua
+                dalam kebaikan.”</p>
+              <p class="ref">(HR. Abu Daud, no. 2130)</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="end" class="end">
-    <div class="container">
-      <div class="card mt-5 mb-5">
-        <div class="card-body">
-          <h1 class="card-title text-center"><i class="bi bi-envelope-heart"></i></h1>
-          <div class="col-12 ">
-            <div class="row align-items-center justify-content-center ">
-              <div class="col-md-6 col-12">
-                <div class="row ">
-                  <div class="col-md-9 col-6">
+    <div id="doa" class="end">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title text-center"><i class="bi bi-envelope-heart"></i></h1>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-8">
                     <p class="text-end mt-5">"Beribadah di atas ketaatan membutuhkan perjuangan keistiqamahan yang
                       panjang dan dengan menikah saya berharap dapat memiliki partner hidup yang dapat membersamai dan
                       mendukung proses tersebut."
                       <br> ~<i>Andi</i>
                   </div>
-                  <div class="col-md-3 col-6">
+                  <div class="col-4">
                     <img src="assets/andi.PNG" alt="andi" class="img-responsive">
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-12">
+              <div class="col-lg-6">
                 <div class="row">
-                  <div class="col-md-3 col-6">
+                  <div class="col-4">
                     <img src="assets/rima.png" alt="rima" class="img-responsive">
                   </div>
-                  <div class="col-md-9 col-6">
+                  <div class="col-8">
                     <p class="mt-5">"Menikah itu tentang melanjutkan hari. Bagaimana seorang hamba menjalankan
-                      peran barunya, tentu dengan kebaikan yang bertambah. Menikah itu ibarat berkendara. Bagaimana sang
+                      peran barunya, tentu dengan kebaikan yang bertambah. Menikah itu ibarat berkendara. Bagaimana
+                      sang
                       pengemudi mampu mengarahkan penumpangnya pada satu tujuan saja, surga-Nya."
                       <br> ~<i>Rima</i>
                   </div>
@@ -280,18 +280,13 @@
         </div>
       </div>
     </div>
+    <div id="salam" class="salam">
+      <div class="container col-lg-12 text-center">
+        <h3>Jazakumullah khairan katsir. <br> Wassalamu'alaikum warahmatullah wabarakatuh</h3>
+      </div>
+    </div>
   </section>
 
-  <div class="container">
-    <div class="bab col-lg-12 text-center mb-5">
-      <h3>Jazakumullah khairan katsir. <br> Wassalamu'alaikum warahmatullah wabarakatuh</h3>
-    </div>
-  </div>
-
-
-</body>
-
-<footer>
   <div id="audio-container">
     <audio id="song" autoplay loop>
       <source src="assets/Pesan perubahan - Badr Al Hamoud.mp3" type="audio/mp3">
@@ -330,83 +325,10 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
-  <!-- <script>
-    simplyCountdown(".simply-countdown", {
-      year: 2024, // required
-      month: 4, // required
-      day: 13, // required
-      hours: 8, // Default is 0 [0-23] integer
-      minutes: 0, // Default is 0 [0-59] integer
-      seconds: 0, // Default is 0 [0-59] integer
-      words: {
-        //words displayed into the countdown
-        days: { singular: " hari", plural: "hari" },
-        hours: { singular: " jam", plural: "jam" },
-        minutes: { singular: " menit", plural: "menit" },
-        seconds: { singular: " detik", plural: "detik" },
-      },
-    });
-  </script>
-  <script>
-    // tombol buka + audio
-    const rootElement = document.querySelector(":root");
-    const hero = document.getElementById('hero');
-    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
-    const audioIcon = document.querySelector('.audio-icon');
-    const song = document.querySelector('#song');
 
-    function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-      window.onscroll = function () {
-        window.scrollTo(scrollTop, scrollLeft);
-      }
-      rootElement.style.scrollBehavior = 'auto';
-    }
+</body>
 
-    function enableScroll() {
-      window.onscroll = function () {
-      }
-      rootElement.style.scrollBehavior = 'smooth';
-      playAudio();
-    }
 
-    function playAudio() {
-      song.volume = 0.5;
-      audioIconWrapper.style.display = 'flex';
-      song.play();
-
-      isPlaying = 'true';
-    }
-
-    audioIconWrapper.onclick = function () {
-      if (isPlaying) {
-        song.pause();
-        audioIcon.classList.remove('bi-play-circle');
-        audioIcon.classList.add('bi-pause-circle');
-      } else {
-        song.play();
-        audioIcon.classList.add('bi-play-circle');
-        audioIcon.classList.remove('bi-pause-circle');
-      }
-
-      isPlaying = !isPlaying;
-    }
-
-    disableScroll();
-
-  </script>
-  <script>
-    const too = window.location.search;
-    const urlParams = new URLSearchParams(too);
-    const param = urlParams.get('to');
-    const upTo = param[0].toUpperCase() + param.substring(1);;
-    // const upTo = param.capitalizeFirstLetter();
-    document.getElementById('to').innerHTML = upTo + '  <i class="fa-solid fa-heart"></i>';
-    document.querySelector('#nama').value = upTo;
-  </script> -->
-
-</footer>
 
 </html>

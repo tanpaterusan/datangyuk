@@ -59,6 +59,7 @@ simplyCountdown(".simply-countdown", {
     function playAudio() {
       // song.volume = 0.5;
       audioIconWrapper.style.display = 'flex';
+      // hero.style.display = 'none';
       song.play();
 
       isPlaying = 'true';
@@ -78,7 +79,7 @@ simplyCountdown(".simply-countdown", {
       isPlaying = !isPlaying;
     }
 
-    disableScroll();
-    
+disableScroll();
+        
 
 
