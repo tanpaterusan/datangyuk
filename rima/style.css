@@ -18,10 +18,11 @@ body {
 .arab {
   font-size: 1.6rem;
   font-family: "Amiri";
-  margin-top: 50px;
+  line-height: 3.5rem;
+  margin-top: 35px;
   margin-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .arti {
@@ -124,7 +125,7 @@ body {
 
 .dua h1 {
   font-size: 4rem;
-  font-family: "Cookie", cursive;
+  font-family: "Cormorant Garamond", serif;
   color: linen;
   margin: 50px;
 }
@@ -137,10 +138,6 @@ body {
 .tiga .couple {
   margin-top: 100px;
 }
-
-/* .tiga .and {
-  padding-top: 70px;
-} */
 
 .tiga h2 {
   font-family: "Cookie", cursive;
@@ -159,7 +156,6 @@ body {
 
 .tiga .mempelai img {
   width: 150px;
-  /* height: 200px; */
   margin-bottom: 30px;
   border-radius: 60px;
   /* border: 2px solid goldenrod; */
@@ -207,7 +203,7 @@ body {
 .empat .tgl {
   border: 2px double wheat !important;
   color: white;
-  width: 450px;
+  width: auto;
   padding: 20px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -269,8 +265,8 @@ body {
 
 .syiar .kegiatan {
   text-align: justify;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .syiar a {
@@ -317,7 +313,7 @@ body {
   border: 2px solid lightsalmon;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(247, 242, 241, 0.3);
 }
 
@@ -326,12 +322,15 @@ body {
   font-family: "Cookie", cursive;
   font-size: 4rem;
   margin-top: 20px;
+  padding-top: 50px;
 }
 
 .enam .end .card {
   background-color: rgba(241, 227, 197, 0.3);
   border: 2px solid burlywood;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .enam .end h1 {
@@ -345,16 +344,26 @@ body {
 }
 
 .end img {
-  width: 150px;
+  /* width: 150px; */
+  width: 100%;
   margin-bottom: 30px;
   margin-top: 30px;
   /* border: 2px solid goldenrod; */
   /* box-shadow: 5px 5px 10px 10px beige; */
 }
 
-.enam .salam {
+.end .kata_rima {
+  margin-top: 20px;
+}
+
+.enam .salam h2 {
   font-family: "Cookie", cursive;
+  font-size: 2.4rem;
   padding: 50px;
+  /* 
+   font-family: "Cookie", cursive;
+  font-size: 2.4rem;
+  color: var(--semi-black); */
   /* margin-bottom: 50px; */
 }
 
@@ -409,5 +418,28 @@ body {
   }
   .simply-countdown > .simply-section {
     padding: 70px;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+}
+
+/* mobile-phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 30px;
+    margin: 3px;
   }
 }
